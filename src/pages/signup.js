@@ -1,9 +1,11 @@
-import Products from '@/components/products/products'
+import Signup from '@/components/signup/signup'
 import React from 'react'
 
 const signup = () => {
   return (
-    <div><Products/></div>
+    <div>
+        <Signup/>
+    </div>
   )
 }
 
