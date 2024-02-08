@@ -1,30 +1,27 @@
-import Head from 'next/head';
+import Head from "next/head";
 
 const Login = () => {
   return (
-    <div className="flex justify-center items-center h-screen bg-[#F9EFDB]">
+    <div className="flex justify-center items-center min-h-screen bg-[#F9EFDB]">
       <Head>
         <title>Login</title>
       </Head>
-      <div className="flex w-full max-w-3xl">
-        <div className="hidden md:block md:w-1/2 pr-16">
-          {/* Left half for photo */}
-          {/* Adjusted width and added max height */}
+      <div className="flex flex-col md:flex-row w-full max-w-screen-xl mx-auto">
+        <div className="md:w-1/2 flex justify-center items-center mr-32">
           <img
             src="/logo.png"
             alt="Your Photo"
-            className="object-cover w-full h-auto rounded-l-lg max-h-full"
+            className="object-cover h-64 md:h-auto w-full rounded-l-lg"
           />
         </div>
-        <div className="md:w-1/2">
-          {/* Right half for login box */}
-          <div className="bg-white rounded-lg p-8 shadow-md">
-            <h1 className="text-2xl font-bold mb-4">Login</h1>
-            <div className="relative mb-4">
-              <div className="border rounded-lg px-4 py-2 w-full focus:outline-none focus:border-blue-500">
+        <div className="md:w-1/2 flex justify-center items-center">
+          <div className="bg-[#E7DBC2] rounded-lg p-12 shadow-md w-full max-w-md">
+            <h1 className="text-3xl mb-8">LOGIN</h1>
+            <div className="relative mb-6">
+              <div className="border-2 rounded-xl border-stone-500 px-4 py-3 w-full focus:outline-none bg-[#E7DBC2]">
                 <input
                   type="email"
-                  className="w-full h-full focus:outline-none"
+                  className="w-full h-full focus:outline-none bg-transparent"
                   id="identifierId"
                   name="identifier"
                   autoComplete="username"
@@ -33,15 +30,15 @@ const Login = () => {
                   aria-label="Email or phone"
                   aria-disabled="false"
                   autoCapitalize="none"
-                  placeholder="Email or phone"
+                  placeholder="Email or Phone"
                 />
               </div>
             </div>
-            <div className="relative mb-4">
-              <div className="border rounded-lg px-4 py-2 w-full focus:outline-none focus:border-blue-500">
+            <div className="relative mb-6">
+              <div className="border-2 rounded-xl border-stone-500 px-4 py-3 w-full focus:outline-none  bg-[#E7DBC2]">
                 <input
                   type="password"
-                  className="w-full h-full focus:outline-none"
+                  className="w-full h-full focus:outline-none bg-transparent"
                   id="password"
                   name="password"
                   autoComplete="current-password"
@@ -52,24 +49,16 @@ const Login = () => {
                 />
               </div>
             </div>
-            <button className="bg-blue-500 text-white rounded-lg px-4 py-2 mb-4 w-full hover:bg-blue-600 focus:outline-none focus:bg-blue-600">
-              Login
-            </button>
-            <div className="flex items-center justify-between">
-              <hr className="flex-grow mr-4" />
-              <span className="text-gray-500">Or</span>
-              <hr className="flex-grow ml-4" />
+            <div className="flex justify-end"> {/* New flex container to push the button to the right */}
+              <button className="border-2 rounded-xl border-stone-500 bg-[#243E36] text-white px-8 py-2 mb-6 hover:bg-[#CFB9A5] focus:outline-none">
+                Login
+              </button>
             </div>
-            <button className="bg-red-500 text-white rounded-lg px-4 py-2 mt-4 w-full hover:bg-red-600 focus:outline-none focus:bg-red-600">
-              Continue with Google
-              <span className="ml-2">
-                <img
-                  src="/google-logo.png"
-                  alt="Google Logo"
-                  className="w-4 h-4 inline-block"
-                />
-              </span>
-            </button>
+            <div className="flex justify-center"> {/* New flex container to center the "Continue with Google" button */}
+              <button className="border-2 rounded-xl border-stone-500 bg-[#4285F4] text-white px-8 py-2 mb-6 hover:bg-[#0F9D58] focus:outline-none">
+                Continue with Google
+              </button>
+            </div>
           </div>
         </div>
       </div>
