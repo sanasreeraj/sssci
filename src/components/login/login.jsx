@@ -15,9 +15,9 @@ const Login = () => {
           />
         </div>
         <div className="md:w-1/2 flex justify-center items-center">
-          <div className="bg-[#E7DBC2] rounded-lg p-12 shadow-md w-full max-w-md">
-            <h1 className="text-3xl mb-8">LOGIN</h1>
-            <div className="relative mb-6">
+          <div className="bg-[#E7DBC2] rounded-lg p-8 md:p-12 shadow-md w-full max-w-md">
+            <h1 className="text-3xl mb-6 md:mb-8">LOGIN</h1>
+            <div className="relative mb-4 md:mb-6">
               <div className="border-2 rounded-xl border-stone-500 px-4 py-3 w-full focus:outline-none bg-[#E7DBC2]">
                 <input
                   type="email"
@@ -34,7 +34,7 @@ const Login = () => {
                 />
               </div>
             </div>
-            <div className="relative mb-6">
+            <div className="relative mb-4 md:mb-6">
               <div className="border-2 rounded-xl border-stone-500 px-4 py-3 w-full focus:outline-none  bg-[#E7DBC2]">
                 <input
                   type="password"
@@ -49,18 +49,18 @@ const Login = () => {
                 />
               </div>
             </div>
-            <div className="flex justify-end"> {/* New flex container to push the button to the right */}
-              <button className="border-2 rounded-xl border-stone-500 bg-[#243E36] text-white px-8 py-2 mb-6 hover:bg-[#CFB9A5] focus:outline-none">
+            <div className="flex justify-end">
+              <button className="border-2 rounded-xl border-stone-500 bg-[#243E36] text-white px-6 md:px-8 py-2 mb-4 md:mb-6 hover:bg-[#CFB9A5] focus:outline-none">
                 Login
-              </button>
-            </div>
-            <div className="flex justify-center"> {/* New flex container to center the "Continue with Google" button */}
-              <button className="border-2 rounded-xl border-stone-500 bg-[#4285F4] text-white px-8 py-2 mb-6 hover:bg-[#0F9D58] focus:outline-none">
-                Continue with Google
               </button>
             </div>
           </div>
         </div>
+      </div>
+      <div className="flex justify-center mt-4">
+        <button className="border-2 rounded-xl border-stone-500 bg-[#4285F4] text-white px-6 md:px-8 py-2 mb-4 md:mb-6 hover:bg-[#0F9D58] focus:outline-none">
+          Continue with Google
+        </button>
       </div>
     </div>
   );
