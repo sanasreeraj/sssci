@@ -7,6 +7,7 @@ const index = () => {
     <div>
         <Nav/>
         <Hero/>
+        <Footer/>
     </div>
     
   )
